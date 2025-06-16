@@ -1,7 +1,7 @@
 {
 	"name": "synthwave-remix-vscode",
 	"displayName": "SynthWave '84 Remix",
-	"description": "An extended version of the Synthwave '84 theme originally created by Robb Owen.",
+	"description": "An extended version of the Synthwave '84 theme originally created by Robb Owen. Combines the original theme with the animated background found in TheCodemonkey's Synthwave X Fluoromachine them.",
 	"version": "0.1.19",
 	"author": "Burton Sickler",
 	"publisher": "BurtonSickler",
