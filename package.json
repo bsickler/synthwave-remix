@@ -1,0 +1,70 @@
+{
+	"name": "synthwave-remix-vscode",
+	"displayName": "SynthWave '84 Remix",
+	"description": "An extended version of the Synthwave '84 theme originally created by Robb Owen.",
+	"version": "0.1.19",
+	"author": "Burton Sickler",
+	"publisher": "BurtonSickler",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bsickler/synthwave-remix"
+	},
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"extensionKind": [
+		"ui"
+	],
+	"keywords": [
+		"retro",
+		"80s"
+	],
+	"categories": [
+		"Themes"
+	],
+	"activationEvents": [
+		"onCommand:synthwave84-remix.enableNeon",
+		"onCommand:synthwave84-remix.disableNeon"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"themes": [
+			{
+				"label": "SynthWave '84 Remix",
+				"uiTheme": "vs-dark",
+				"path": "./themes/synthwave-color-theme.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "synthwave84-remix.enableNeon",
+				"title": "Synthwave '84 Remix: Enable Neon Dreams"
+			},
+			{
+				"command": "synthwave84-remix.disableNeon",
+				"title": "Synthwave '84 Remix: Disable Neon Dreams"
+			}
+		],
+		"configuration": {
+			"title": "Synthwave '84 Remix",
+			"properties": {
+				"synthwave84-remix.brightness": {
+					"type": "number",
+					"default": 0.45,
+					"description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
+				},
+				"synthwave84-remix.disableGlow": {
+					"type": "boolean",
+					"default": false,
+					"description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
+				}
+			}
+		}
+	},
+	"__metadata": {
+		"installedTimestamp": 1746401292413,
+		"targetPlatform": "undefined",
+		"size": 754628
+	}
+}
